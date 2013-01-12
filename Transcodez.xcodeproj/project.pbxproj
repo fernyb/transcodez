@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C45EAA1E16A10712001EFBE1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45EAA1D16A10712001EFBE1 /* Cocoa.framework */; };
+		C45EAA2016A10712001EFBE1 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45EAA1F16A10712001EFBE1 /* MacRuby.framework */; };
+		C45EAA2916A10712001EFBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA2716A10712001EFBE1 /* InfoPlist.strings */; };
+		C45EAA2B16A10712001EFBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C45EAA2A16A10712001EFBE1 /* main.m */; };
+		C45EAA3016A10712001EFBE1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA2E16A10712001EFBE1 /* MainMenu.xib */; };
+		C45EAA3316A10712001EFBE1 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA3216A10712001EFBE1 /* rb_main.rb */; };
+		C45EAA3516A10712001EFBE1 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA3416A10712001EFBE1 /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C45EAA2216A10712001EFBE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C45EAA1016A10712001EFBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C45EAA1816A10712001EFBE1;
+			remoteInfo = Transcodez;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C45EAA1916A10712001EFBE1 /* Transcodez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcodez.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45EAA1D16A10712001EFBE1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C45EAA1F16A10712001EFBE1 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		C45EAA2616A10712001EFBE1 /* Transcodez-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Transcodez-Info.plist"; sourceTree = "<group>"; };
+		C45EAA2816A10712001EFBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C45EAA2A16A10712001EFBE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C45EAA2C16A10712001EFBE1 /* Transcodez-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transcodez-Prefix.pch"; sourceTree = "<group>"; };
+		C45EAA2F16A10712001EFBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C45EAA3216A10712001EFBE1 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		C45EAA3416A10712001EFBE1 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C45EAA1616A10712001EFBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45EAA1E16A10712001EFBE1 /* Cocoa.framework in Frameworks */,
+				C45EAA2016A10712001EFBE1 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C45EAA0E16A10712001EFBE1 = {
+			isa = PBXGroup;
+			children = (
+				C45EAA2416A10712001EFBE1 /* Transcodez */,
+				C45EAA1C16A10712001EFBE1 /* Frameworks */,
+				C45EAA1A16A10712001EFBE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C45EAA1A16A10712001EFBE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C45EAA1916A10712001EFBE1 /* Transcodez.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C45EAA1C16A10712001EFBE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C45EAA1D16A10712001EFBE1 /* Cocoa.framework */,
+				C45EAA1F16A10712001EFBE1 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C45EAA2416A10712001EFBE1 /* Transcodez */ = {
+			isa = PBXGroup;
+			children = (
+				C45EAA3416A10712001EFBE1 /* AppDelegate.rb */,
+				C45EAA2D16A10712001EFBE1 /* Resources */,
+				C45EAA3116A10712001EFBE1 /* Other Sources */,
+				C45EAA2516A10712001EFBE1 /* Supporting Files */,
+			);
+			path = Transcodez;
+			sourceTree = "<group>";
+		};
+		C45EAA2516A10712001EFBE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C45EAA2616A10712001EFBE1 /* Transcodez-Info.plist */,
+				C45EAA2716A10712001EFBE1 /* InfoPlist.strings */,
+				C45EAA2A16A10712001EFBE1 /* main.m */,
+				C45EAA2C16A10712001EFBE1 /* Transcodez-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C45EAA2D16A10712001EFBE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C45EAA2E16A10712001EFBE1 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C45EAA3116A10712001EFBE1 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C45EAA3216A10712001EFBE1 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		C45EAA2116A10712001EFBE1 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = C45EAA3B16A10712001EFBE1 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				C45EAA2316A10712001EFBE1 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		C45EAA1816A10712001EFBE1 /* Transcodez */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C45EAA3816A10712001EFBE1 /* Build configuration list for PBXNativeTarget "Transcodez" */;
+			buildPhases = (
+				C45EAA1516A10712001EFBE1 /* Sources */,
+				C45EAA1616A10712001EFBE1 /* Frameworks */,
+				C45EAA1716A10712001EFBE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transcodez;
+			productName = Transcodez;
+			productReference = C45EAA1916A10712001EFBE1 /* Transcodez.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C45EAA1016A10712001EFBE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = fernyb;
+			};
+			buildConfigurationList = C45EAA1316A10712001EFBE1 /* Build configuration list for PBXProject "Transcodez" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C45EAA0E16A10712001EFBE1;
+			productRefGroup = C45EAA1A16A10712001EFBE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C45EAA1816A10712001EFBE1 /* Transcodez */,
+				C45EAA2116A10712001EFBE1 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C45EAA1716A10712001EFBE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45EAA2916A10712001EFBE1 /* InfoPlist.strings in Resources */,
+				C45EAA3016A10712001EFBE1 /* MainMenu.xib in Resources */,
+				C45EAA3316A10712001EFBE1 /* rb_main.rb in Resources */,
+				C45EAA3516A10712001EFBE1 /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C45EAA1516A10712001EFBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45EAA2B16A10712001EFBE1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C45EAA2316A10712001EFBE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C45EAA1816A10712001EFBE1 /* Transcodez */;
+			targetProxy = C45EAA2216A10712001EFBE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C45EAA2716A10712001EFBE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C45EAA2816A10712001EFBE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C45EAA2E16A10712001EFBE1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C45EAA2F16A10712001EFBE1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C45EAA3616A10712001EFBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C45EAA3716A10712001EFBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C45EAA3916A10712001EFBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transcodez/Transcodez-Prefix.pch";
+				INFOPLIST_FILE = "Transcodez/Transcodez-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C45EAA3A16A10712001EFBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transcodez/Transcodez-Prefix.pch";
+				INFOPLIST_FILE = "Transcodez/Transcodez-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C45EAA3C16A10712001EFBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C45EAA3D16A10712001EFBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C45EAA1316A10712001EFBE1 /* Build configuration list for PBXProject "Transcodez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C45EAA3616A10712001EFBE1 /* Debug */,
+				C45EAA3716A10712001EFBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C45EAA3816A10712001EFBE1 /* Build configuration list for PBXNativeTarget "Transcodez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C45EAA3916A10712001EFBE1 /* Debug */,
+				C45EAA3A16A10712001EFBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C45EAA3B16A10712001EFBE1 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C45EAA3C16A10712001EFBE1 /* Debug */,
+				C45EAA3D16A10712001EFBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C45EAA1016A10712001EFBE1 /* Project object */;
+}
