@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C428B7AC16A7A54E00A78D30 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AB16A7A54E00A78D30 /* AppController.rb */; };
+		C428B7B016A7A71B00A78D30 /* DropZoneView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */; };
 		C45EAA1E16A10712001EFBE1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45EAA1D16A10712001EFBE1 /* Cocoa.framework */; };
 		C45EAA2916A10712001EFBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA2716A10712001EFBE1 /* InfoPlist.strings */; };
 		C45EAA2B16A10712001EFBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C45EAA2A16A10712001EFBE1 /* main.m */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		C428B7AB16A7A54E00A78D30 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
+		C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = DropZoneView.rb; sourceTree = "<group>"; };
 		C45EAA1916A10712001EFBE1 /* Transcodez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcodez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45EAA1D16A10712001EFBE1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C45EAA1F16A10712001EFBE1 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				C428B7AB16A7A54E00A78D30 /* AppController.rb */,
+				C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */,
 			);
 			name = "Ruby Files";
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				C45EAA3316A10712001EFBE1 /* rb_main.rb in Resources */,
 				C45EAA3516A10712001EFBE1 /* AppDelegate.rb in Resources */,
 				C428B7AC16A7A54E00A78D30 /* AppController.rb in Resources */,
+				C428B7B016A7A71B00A78D30 /* DropZoneView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
