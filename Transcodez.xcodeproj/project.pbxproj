@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C428B7AC16A7A54E00A78D30 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AB16A7A54E00A78D30 /* AppController.rb */; };
 		C45EAA1E16A10712001EFBE1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45EAA1D16A10712001EFBE1 /* Cocoa.framework */; };
-		C45EAA2016A10712001EFBE1 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45EAA1F16A10712001EFBE1 /* MacRuby.framework */; };
 		C45EAA2916A10712001EFBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA2716A10712001EFBE1 /* InfoPlist.strings */; };
 		C45EAA2B16A10712001EFBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C45EAA2A16A10712001EFBE1 /* main.m */; };
 		C45EAA3016A10712001EFBE1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA2E16A10712001EFBE1 /* MainMenu.xib */; };
 		C45EAA3316A10712001EFBE1 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA3216A10712001EFBE1 /* rb_main.rb */; };
 		C45EAA3516A10712001EFBE1 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C45EAA3416A10712001EFBE1 /* AppDelegate.rb */; };
+		C45EAA3F16A107B5001EFBE1 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45EAA3E16A107B5001EFBE1 /* MacRuby.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C428B7AB16A7A54E00A78D30 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
 		C45EAA1916A10712001EFBE1 /* Transcodez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcodez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45EAA1D16A10712001EFBE1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C45EAA1F16A10712001EFBE1 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
@@ -37,6 +39,7 @@
 		C45EAA2F16A10712001EFBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C45EAA3216A10712001EFBE1 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		C45EAA3416A10712001EFBE1 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		C45EAA3E16A107B5001EFBE1 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = ../../../../Library/Frameworks/MacRuby.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,16 +48,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45EAA1E16A10712001EFBE1 /* Cocoa.framework in Frameworks */,
-				C45EAA2016A10712001EFBE1 /* MacRuby.framework in Frameworks */,
+				C45EAA3F16A107B5001EFBE1 /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C428B7AE16A7A63500A78D30 /* Ruby Files */ = {
+			isa = PBXGroup;
+			children = (
+				C428B7AB16A7A54E00A78D30 /* AppController.rb */,
+			);
+			name = "Ruby Files";
+			sourceTree = "<group>";
+		};
 		C45EAA0E16A10712001EFBE1 = {
 			isa = PBXGroup;
 			children = (
+				C45EAA3E16A107B5001EFBE1 /* MacRuby.framework */,
 				C45EAA2416A10712001EFBE1 /* Transcodez */,
 				C45EAA1C16A10712001EFBE1 /* Frameworks */,
 				C45EAA1A16A10712001EFBE1 /* Products */,
@@ -81,6 +93,7 @@
 		C45EAA2416A10712001EFBE1 /* Transcodez */ = {
 			isa = PBXGroup;
 			children = (
+				C428B7AE16A7A63500A78D30 /* Ruby Files */,
 				C45EAA3416A10712001EFBE1 /* AppDelegate.rb */,
 				C45EAA2D16A10712001EFBE1 /* Resources */,
 				C45EAA3116A10712001EFBE1 /* Other Sources */,
@@ -189,6 +202,7 @@
 				C45EAA3016A10712001EFBE1 /* MainMenu.xib in Resources */,
 				C45EAA3316A10712001EFBE1 /* rb_main.rb in Resources */,
 				C45EAA3516A10712001EFBE1 /* AppDelegate.rb in Resources */,
+				C428B7AC16A7A54E00A78D30 /* AppController.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +304,7 @@
 				ARCHS = x86_64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					/Library/Frameworks,
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
@@ -307,6 +322,7 @@
 				ARCHS = x86_64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					/Library/Frameworks,
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
@@ -349,6 +365,7 @@
 				C45EAA3A16A10712001EFBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C45EAA3B16A10712001EFBE1 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -357,6 +374,7 @@
 				C45EAA3D16A10712001EFBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
