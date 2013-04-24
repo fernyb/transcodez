@@ -68,18 +68,24 @@ class DropZoneView < NSView
     save_panel.setAllowsMultipleSelection(false)
     save_panel.setCanCreateDirectories(true)
     save_panel.setPrompt("Select")
+    @dropzoneview = self
     
     save_panel.beginSheetModalForWindow(self.window, completionHandler: lambda {|result|
       if result == NSFileHandlingPanelOKButton
         save_url = save_panel.directoryURL.absoluteString
         saveLocation = Struct.new(:save_url, :files).new(save_url, files)
-        NSNotificationCenter.defaultCenter.postNotificationName("didSelectSaveLocation", object:saveLocation)
+                                        
+        @dropzoneview.performSelector("didSelectSaveLocation:", withObject:saveLocation, afterDelay:1)
         NSLog("***** Save URL #{save_url}")
         NSLog("***** Filename: #{ files.join(',') }")
       else
         NSLog("*** Button False")
       end
     })
+  end
+  
+  def didSelectSaveLocation(saveLocation)
+    NSNotificationCenter.defaultCenter.postNotificationName("didSelectSaveLocation", object:saveLocation)
   end
   
   def drawRect(rect)

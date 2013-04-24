@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41B04521728759A00D839F0 /* ProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41B04511728759A00D839F0 /* ProgressWindowController.rb */; };
+		C41B045717288E9E00D839F0 /* Encoder.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41B045617288E9E00D839F0 /* Encoder.rb */; };
 		C428B7AC16A7A54E00A78D30 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AB16A7A54E00A78D30 /* AppController.rb */; };
 		C428B7B016A7A71B00A78D30 /* DropZoneView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */; };
 		C435D3751727961500769B90 /* Progress.xib in Resources */ = {isa = PBXBuildFile; fileRef = C435D3741727961500769B90 /* Progress.xib */; };
@@ -30,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C41B04511728759A00D839F0 /* ProgressWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ProgressWindowController.rb; sourceTree = "<group>"; };
+		C41B04541728778A00D839F0 /* ProgressWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindowController.h; sourceTree = "<group>"; };
+		C41B04551728778A00D839F0 /* ProgressWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindowController.m; sourceTree = "<group>"; };
+		C41B045617288E9E00D839F0 /* Encoder.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Encoder.rb; sourceTree = "<group>"; };
 		C428B7AB16A7A54E00A78D30 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
 		C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = DropZoneView.rb; sourceTree = "<group>"; };
 		C435D3741727961500769B90 /* Progress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Progress.xib; sourceTree = "<group>"; };
@@ -59,11 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C41B04531728775C00D839F0 /* ObjC Files */ = {
+			isa = PBXGroup;
+			children = (
+				C41B04541728778A00D839F0 /* ProgressWindowController.h */,
+				C41B04551728778A00D839F0 /* ProgressWindowController.m */,
+			);
+			name = "ObjC Files";
+			sourceTree = "<group>";
+		};
 		C428B7AE16A7A63500A78D30 /* Ruby Files */ = {
 			isa = PBXGroup;
 			children = (
 				C428B7AB16A7A54E00A78D30 /* AppController.rb */,
 				C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */,
+				C41B04511728759A00D839F0 /* ProgressWindowController.rb */,
+				C41B045617288E9E00D839F0 /* Encoder.rb */,
 			);
 			name = "Ruby Files";
 			sourceTree = "<group>";
@@ -98,6 +115,7 @@
 		C45EAA2416A10712001EFBE1 /* Transcodez */ = {
 			isa = PBXGroup;
 			children = (
+				C41B04531728775C00D839F0 /* ObjC Files */,
 				C428B7AE16A7A63500A78D30 /* Ruby Files */,
 				C45EAA3416A10712001EFBE1 /* AppDelegate.rb */,
 				C45EAA2D16A10712001EFBE1 /* Resources */,
@@ -211,6 +229,8 @@
 				C428B7AC16A7A54E00A78D30 /* AppController.rb in Resources */,
 				C428B7B016A7A71B00A78D30 /* DropZoneView.rb in Resources */,
 				C435D3751727961500769B90 /* Progress.xib in Resources */,
+				C41B04521728759A00D839F0 /* ProgressWindowController.rb in Resources */,
+				C41B045717288E9E00D839F0 /* Encoder.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
