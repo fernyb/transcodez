@@ -9,6 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ProgressWindowController : NSWindowController
+{
+  IBOutlet NSProgressIndicator * progressBar;
+  IBOutlet NSTextField * progressLabel;
+}
 
 - (IBAction)btnCloseWindow:(id)sender;
 

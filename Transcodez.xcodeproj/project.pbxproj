@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41A360D17298AAA00EAD251 /* EncodingTime.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41A360C17298AAA00EAD251 /* EncodingTime.rb */; };
+		C41A360F17298AC700EAD251 /* EncodingBase.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41A360E17298AC700EAD251 /* EncodingBase.rb */; };
+		C41A361117298B0A00EAD251 /* HLSEncoding.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41A361017298B0A00EAD251 /* HLSEncoding.rb */; };
 		C41B04521728759A00D839F0 /* ProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41B04511728759A00D839F0 /* ProgressWindowController.rb */; };
-		C41B045717288E9E00D839F0 /* Encoder.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41B045617288E9E00D839F0 /* Encoder.rb */; };
 		C428B7AC16A7A54E00A78D30 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AB16A7A54E00A78D30 /* AppController.rb */; };
 		C428B7B016A7A71B00A78D30 /* DropZoneView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */; };
 		C435D3751727961500769B90 /* Progress.xib in Resources */ = {isa = PBXBuildFile; fileRef = C435D3741727961500769B90 /* Progress.xib */; };
@@ -32,10 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C41A360C17298AAA00EAD251 /* EncodingTime.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = EncodingTime.rb; sourceTree = "<group>"; };
+		C41A360E17298AC700EAD251 /* EncodingBase.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = EncodingBase.rb; sourceTree = "<group>"; };
+		C41A361017298B0A00EAD251 /* HLSEncoding.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = HLSEncoding.rb; sourceTree = "<group>"; };
 		C41B04511728759A00D839F0 /* ProgressWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ProgressWindowController.rb; sourceTree = "<group>"; };
 		C41B04541728778A00D839F0 /* ProgressWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindowController.h; sourceTree = "<group>"; };
 		C41B04551728778A00D839F0 /* ProgressWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindowController.m; sourceTree = "<group>"; };
-		C41B045617288E9E00D839F0 /* Encoder.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Encoder.rb; sourceTree = "<group>"; };
 		C428B7AB16A7A54E00A78D30 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
 		C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = DropZoneView.rb; sourceTree = "<group>"; };
 		C435D3741727961500769B90 /* Progress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Progress.xib; sourceTree = "<group>"; };
@@ -80,7 +84,9 @@
 				C428B7AB16A7A54E00A78D30 /* AppController.rb */,
 				C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */,
 				C41B04511728759A00D839F0 /* ProgressWindowController.rb */,
-				C41B045617288E9E00D839F0 /* Encoder.rb */,
+				C41A360C17298AAA00EAD251 /* EncodingTime.rb */,
+				C41A360E17298AC700EAD251 /* EncodingBase.rb */,
+				C41A361017298B0A00EAD251 /* HLSEncoding.rb */,
 			);
 			name = "Ruby Files";
 			sourceTree = "<group>";
@@ -230,7 +236,9 @@
 				C428B7B016A7A71B00A78D30 /* DropZoneView.rb in Resources */,
 				C435D3751727961500769B90 /* Progress.xib in Resources */,
 				C41B04521728759A00D839F0 /* ProgressWindowController.rb in Resources */,
-				C41B045717288E9E00D839F0 /* Encoder.rb in Resources */,
+				C41A360D17298AAA00EAD251 /* EncodingTime.rb in Resources */,
+				C41A360F17298AC700EAD251 /* EncodingBase.rb in Resources */,
+				C41A361117298B0A00EAD251 /* HLSEncoding.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

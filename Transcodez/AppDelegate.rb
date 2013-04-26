@@ -30,5 +30,34 @@ class AppDelegate
   
   def start_encoder(object)
     NSLog(object.inspect)
+    save_url = object.save_url.gsub("file://localhost", "")
+    
+    name = object.files.first
+    input_video = File.basename(name.gsub(".", "_"))
+    download_dir = "#{save_url}/#{input_video}".gsub("//", "/")
+   
+    bitrate = 768 * 1024
+    
+    gcdq = Dispatch::Queue.new('hls_encoding.gcd')
+    gcdq.async {
+      hls_encode = HLSEncoding.new
+      hls_encode.bitrate = bitrate
+      hls_encode.encoding_dir = download_dir
+      hls_encode.input_video = object.files.first
+      hls_encode.output_file = "segments/stream-%d.ts"
+      hls_encode.on_start do
+        @progressWindowController.performSelectorOnMainThread("encoding_start", withObject:nil, waitUntilDone:false)
+      end
+      hls_encode.on_complete do
+        @progressWindowController.performSelectorOnMainThread("encoding_complete", withObject:nil, waitUntilDone:false)
+      end
+      hls_encode.on_pid do |pid|
+        @progressWindowController.pid = pid
+      end
+      hls_encode.encode_task do |status|
+        new_status = status.copy
+        @progressWindowController.performSelectorOnMainThread("encoding_update:", withObject:new_status, waitUntilDone:false)
+      end
+    }
   end
 end
