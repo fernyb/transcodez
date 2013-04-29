@@ -17,8 +17,10 @@ class EncodingBase
   attr_accessor :bitrate
   attr_accessor :on_start_block
   attr_accessor :on_complete_block
-  attr_accessor :on_pid_start
+  attr_accessor :on_pid_block
   attr_accessor :encode_task_block
+  attr_accessor :task_pid
+  
   
   def initialize
     self.ffmpeg_bin = "/usr/local/ffmpeg-1.0/bin/ffmpeg"
@@ -42,7 +44,7 @@ class EncodingBase
   end
   
   def on_pid &block
-    @on_pid_start = block
+    self.on_pid_block = block
   end
   
   def encode &block
@@ -60,8 +62,6 @@ class EncodingBase
     
     Open3.popen3(command) do |stdin, stdout, stderr, wait_thr|
       stdout.each("r") do |line|
-        $stdout.puts "******* Wait Thr: #{ wait_thr.inspect }"
-        
         if line.include?("time=")
           time = if line =~ /time=(\d+):(\d+):(\d+\.?\d+)/ then
             ($1.to_i * 3600) + ($2.to_i * 60) + $3.to_f
@@ -110,6 +110,13 @@ class EncodingBase
     file = pipe.fileHandleForReading
     file.readInBackgroundAndNotify
     task.launch
+    
+    self.task_pid = task.processIdentifier
+    
+    if self.on_pid_block
+      self.on_pid_block.call(self.task_pid)
+    end
+      
     task.waitUntilExit
     
     if self.on_complete_block
@@ -145,10 +152,6 @@ class EncodingBase
     end # end stdout
 
     aNotification.object.readInBackgroundAndNotify
-
-    #if self.encode_task_block
-    #  self.encode_task_block.call
-    #end
   end
                       
   def ffmpeg_command_list

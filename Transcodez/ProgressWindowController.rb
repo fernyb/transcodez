@@ -55,9 +55,8 @@ class ProgressWindowController < NSWindowController
   end
   
   def btnCloseWindow(sender)
-    if @pid
-      $stdout.print "********** Stop Current Pid: #{@pid} \n"
-      `kill -9 #{@pid}`
+    if self.pid
+      system("kill -9 #{self.pid}")
     end
     self.window.orderOut(nil)
   end
