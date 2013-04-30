@@ -9,6 +9,8 @@
 class AppDelegate
   attr_accessor :window
   attr_accessor :progressWindowController
+  attr_accessor :bitrateSelectionButton
+  attr_accessor :selected_bitrate
   
   def applicationDidFinishLaunching(a_notification)
     # Insert code here to initialize your application
@@ -19,6 +21,10 @@ class AppDelegate
   end
   
   def didDropFiles(aNotification)
+    bitrate_selected_item = self.bitrateSelectionButton.selectedItem
+    if bitrate_selected_item.title =~ /(\d+).*/
+    self.selected_bitrate = $1.to_i
+      
     @progressWindowController ||= ProgressWindowController.alloc.init
     NSApplication.sharedApplication.beginSheet(@progressWindowController.window,
                                                modalForWindow: self.window,
@@ -26,17 +32,17 @@ class AppDelegate
                                                didEndSelector: nil,
                                                contextInfo: nil)
     self.start_encoder(aNotification.object)
+    end
   end
   
   def start_encoder(object)
-    NSLog(object.inspect)
     save_url = object.save_url.gsub("file://localhost", "")
     
     name = object.files.first
     input_video = File.basename(name.gsub(".", "_"))
     download_dir = "#{save_url}/#{input_video}".gsub("//", "/")
    
-    bitrate = 768 * 1024
+    bitrate = self.selected_bitrate.to_i * 1024
     
     gcdq = Dispatch::Queue.new('hls_encoding.gcd')
     gcdq.async {

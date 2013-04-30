@@ -10,6 +10,8 @@
 		C41A360D17298AAA00EAD251 /* EncodingTime.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41A360C17298AAA00EAD251 /* EncodingTime.rb */; };
 		C41A360F17298AC700EAD251 /* EncodingBase.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41A360E17298AC700EAD251 /* EncodingBase.rb */; };
 		C41A361117298B0A00EAD251 /* HLSEncoding.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41A361017298B0A00EAD251 /* HLSEncoding.rb */; };
+		C41A6EF6172F7874000AFC60 /* ffmpeg in Copy Files */ = {isa = PBXBuildFile; fileRef = C41A6EF5172F7874000AFC60 /* ffmpeg */; };
+		C41A6EF9172F7F9B000AFC60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C41A6EF8172F7F9B000AFC60 /* AppDelegate.m */; };
 		C41B04521728759A00D839F0 /* ProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C41B04511728759A00D839F0 /* ProgressWindowController.rb */; };
 		C428B7AC16A7A54E00A78D30 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AB16A7A54E00A78D30 /* AppController.rb */; };
 		C428B7B016A7A71B00A78D30 /* DropZoneView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428B7AF16A7A71B00A78D30 /* DropZoneView.rb */; };
@@ -33,10 +35,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C41A6EF4172F7851000AFC60 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				C41A6EF6172F7874000AFC60 /* ffmpeg in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C41A360C17298AAA00EAD251 /* EncodingTime.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = EncodingTime.rb; sourceTree = "<group>"; };
 		C41A360E17298AC700EAD251 /* EncodingBase.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = EncodingBase.rb; sourceTree = "<group>"; };
 		C41A361017298B0A00EAD251 /* HLSEncoding.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = HLSEncoding.rb; sourceTree = "<group>"; };
+		C41A6EF5172F7874000AFC60 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = ffmpeg; path = Transcodez/bin/ffmpeg; sourceTree = "<group>"; };
+		C41A6EF7172F7F9B000AFC60 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C41A6EF8172F7F9B000AFC60 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C41B04511728759A00D839F0 /* ProgressWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ProgressWindowController.rb; sourceTree = "<group>"; };
 		C41B04541728778A00D839F0 /* ProgressWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindowController.h; sourceTree = "<group>"; };
 		C41B04551728778A00D839F0 /* ProgressWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindowController.m; sourceTree = "<group>"; };
@@ -74,6 +93,8 @@
 			children = (
 				C41B04541728778A00D839F0 /* ProgressWindowController.h */,
 				C41B04551728778A00D839F0 /* ProgressWindowController.m */,
+				C41A6EF7172F7F9B000AFC60 /* AppDelegate.h */,
+				C41A6EF8172F7F9B000AFC60 /* AppDelegate.m */,
 			);
 			name = "ObjC Files";
 			sourceTree = "<group>";
@@ -94,6 +115,7 @@
 		C45EAA0E16A10712001EFBE1 = {
 			isa = PBXGroup;
 			children = (
+				C41A6EF5172F7874000AFC60 /* ffmpeg */,
 				C45EAA3E16A107B5001EFBE1 /* MacRuby.framework */,
 				C45EAA2416A10712001EFBE1 /* Transcodez */,
 				C45EAA1C16A10712001EFBE1 /* Frameworks */,
@@ -186,6 +208,7 @@
 				C45EAA1516A10712001EFBE1 /* Sources */,
 				C45EAA1616A10712001EFBE1 /* Frameworks */,
 				C45EAA1716A10712001EFBE1 /* Resources */,
+				C41A6EF4172F7851000AFC60 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -250,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45EAA2B16A10712001EFBE1 /* main.m in Sources */,
+				C41A6EF9172F7F9B000AFC60 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

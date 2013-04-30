@@ -23,7 +23,7 @@ class EncodingBase
   
   
   def initialize
-    self.ffmpeg_bin = "/usr/local/ffmpeg-1.0/bin/ffmpeg"
+    self.ffmpeg_bin =  File.expand_path(NSBundle.mainBundle.executablePath + "/../ffmpeg")
     NSNotificationCenter.defaultCenter.addObserver(self, selector:"taskReadCompletionNotification:", name:"NSFileHandleReadCompletionNotification", object:nil)
   end
   
